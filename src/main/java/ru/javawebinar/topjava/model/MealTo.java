@@ -24,6 +24,23 @@ public class MealTo {
 //        return excess.get();
 //    }
 
+
+    public String getDateAndTime() {
+        return dateTime.toLocalDate() + " " +dateTime.toLocalTime();
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public boolean isExcess() {
+        return excess;
+    }
+
+    public int getCalories() {
+        return calories;
+    }
+
     @Override
     public String toString() {
         return "MealTo{" +
