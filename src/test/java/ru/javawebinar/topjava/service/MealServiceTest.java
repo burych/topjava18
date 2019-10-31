@@ -14,6 +14,7 @@ import java.time.LocalDate;
 import java.time.Month;
 
 import static ru.javawebinar.topjava.MealTestData.*;
+import static ru.javawebinar.topjava.UserTestData.ADMIN;
 import static ru.javawebinar.topjava.UserTestData.ADMIN_ID;
 import static ru.javawebinar.topjava.UserTestData.USER_ID;
 
@@ -56,6 +57,7 @@ public class MealServiceTest {
     @Test
     public void get() throws Exception {
         Meal actual = service.get(ADMIN_MEAL_ID, ADMIN_ID);
+        //ADMIN_MEAL1.setUser(ADMIN);
         assertMatch(actual, ADMIN_MEAL1);
     }
 
